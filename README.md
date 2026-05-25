@@ -545,7 +545,13 @@ sair
 
 ---
 
-## 14. Resumo rápido
+## 14. IAs utilizadas
+
+ChatGPt 5.5
+Claude Sonnet 4.6
+Gemini 3.5 Flash
+
+## 15. Resumo rápido
 
 Instalação:
 
