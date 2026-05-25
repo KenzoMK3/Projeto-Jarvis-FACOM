@@ -545,37 +545,7 @@ sair
 
 ---
 
-## 14. O que enviar/entregar no projeto
-
-Para uma entrega limpa, recomenda-se enviar:
-
-```text
-main.py
-config.py
-requirements.txt
-README.md
-README_USO_JARVIS.md
-data/
-database/db_manager.py
-llm/gemma_client.py
-logs/tool_logger.py
-rag/
-tools/
-```
-
-Evite enviar:
-
-```text
-.venv/
-__pycache__/
-*.pyc
-```
-
-Se o arquivo `jarvis.db` ou `rag_index.pkl` forem muito grandes, confirme com o professor se eles devem ser enviados. Normalmente, o código consegue recriar esses arquivos ao executar o projeto, desde que os materiais estejam em `data`.
-
----
-
-## 15. Resumo rápido
+## 14. Resumo rápido
 
 Instalação:
 
