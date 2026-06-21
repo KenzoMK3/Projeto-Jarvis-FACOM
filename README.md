@@ -52,9 +52,8 @@ Antes de executar, você precisa ter instalado:
 
 - Python 3.10 ou superior;
 - `pip`;
-- acesso ao terminal/PowerShell;
-- token da API Gemma fornecido pelo professor;
-- conexão com a internet na primeira execução, pois o modelo de embeddings pode ser baixado automaticamente.
+- token da API Gemma;
+- conexão com a internet na primeira execução.
 
 Dependências principais:
 
@@ -71,11 +70,7 @@ python-docx
 
 ## 3. Instalação no Windows com PowerShell
 
-Entre na pasta do projeto:
-
-```powershell
-cd C:\Users\kimur\Downloads\JARVIS
-```
+Entre na pasta do projeto;
 
 Crie um ambiente virtual:
 
@@ -106,7 +101,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ## 4. Configuração da chave da API
 
-O projeto **não deve ter o token escrito diretamente no código**. Configure a variável de ambiente `GEMMA_API_TOKEN` antes de executar.
+Configure a variável de ambiente `GEMMA_API_TOKEN` antes de executar.
 
 No PowerShell, para a sessão atual:
 
@@ -126,7 +121,7 @@ Teste se o cliente Gemma consegue responder:
 python -c "from llm.gemma_client import GemmaClient; c=GemmaClient(); print(c.generate('Responda apenas: funcionando'))"
 ```
 
-Se tudo estiver correto, a resposta esperada será algo parecido com:
+A resposta esperada será algo parecido com:
 
 ```text
 funcionando
@@ -499,53 +494,7 @@ Se o comando não mostrar erro, a sintaxe do arquivo está válida.
 
 ---
 
-## 13. Fluxo recomendado para testar tudo
-
-Execute os passos nesta ordem:
-
-```powershell
-cd C:\Users\kimur\Downloads\JARVIS
-.\.venv\Scripts\Activate.ps1
-$env:GEMMA_API_TOKEN="SEU_TOKEN_AQUI"
-pip install -r requirements.txt
-python -m py_compile main.py
-python -c "from llm.gemma_client import GemmaClient; c=GemmaClient(); print(c.generate('Responda apenas: funcionando'))"
-python main.py
-```
-
-Dentro do JARVIS, teste:
-
-```text
-Liste os materiais disponíveis.
-```
-
-```text
-O que eu tenho na agenda hoje?
-```
-
-```text
-Adicione uma tarefa chamada testar o JARVIS com prioridade alta para 2026-05-30.
-```
-
-```text
-Liste minhas tarefas pendentes.
-```
-
-```text
-Busque nos materiais o que é machine learning.
-```
-
-```text
-logs
-```
-
-```text
-sair
-```
-
----
-
-## 14. IAs utilizadas
+## 13. IAs utilizadas
 
 ChatGPt 5.5
 Claude Sonnet 4.6
@@ -553,7 +502,7 @@ Gemini 3.5 Flash
 
 ---
 
-## 15. Resumo rápido
+## 14. Resumo rápido
 
 Instalação:
 
